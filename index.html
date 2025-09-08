@@ -9,8 +9,8 @@
   <meta content="Vijay Guntuku, Portfolio, Computer Science, Software Developer, Web Developer" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <!-- <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon"> -->
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
@@ -26,6 +26,38 @@
 
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
+
+  <style>
+    .download-btn {
+      background-color: #149ddd;
+      color: white;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 4px;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      transition: all 0.3s ease;
+      font-size: 14px;
+      margin-left: 15px;
+    }
+    .download-btn:hover {
+      background-color: #0d8ac5;
+      color: white;
+    }
+    .resume-download-container {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 30px;
+    }
+    @media (max-width: 768px) {
+      .download-btn {
+        margin-left: 0;
+        margin-top: 10px;
+      }
+    }
+  </style>
 </head>
 
 <body class="index-page">
@@ -34,7 +66,7 @@
     <i class="header-toggle d-xl-none bi bi-list"></i>
 
     <div class="profile-img">
-      <img src="assets/img/profile.jpg" alt="Vijay Guntuku" class="img-fluid rounded-circle">
+      <img src="assets/img/profile.JPG" alt="Vijay Guntuku" class="img-fluid rounded-circle">
     </div>
 
     <a href="index.html" class="logo d-flex align-items-center justify-content-center">
@@ -45,6 +77,9 @@
       <a href="https://www.linkedin.com/in/vijay-guntuku-5b7a941b3/" class="linkedin"><i class="bi bi-linkedin"></i></a>
       <a href="mailto:vgunt003@odu.edu" class="email"><i class="bi bi-envelope"></i></a>
       <a href="#" class="github"><i class="bi bi-github"></i></a>
+      <a href="assets/pdf/Vijay_Guntuku_Resume.pdf" download="Vijay_Guntuku_Resume.pdf" class="download-btn">
+        <i class="bi bi-download"></i> Resume
+      </a>
     </div>
 
     <nav id="navmenu" class="navmenu">
@@ -84,7 +119,7 @@
 
         <div class="row gy-4 justify-content-center">
           <div class="col-lg-4">
-            <img src="assets/img/my-profile-img.jpg" class="img-fluid" alt="Vijay Guntuku">
+            <img src="assets/img/profile.JPG" class="img-fluid" alt="Vijay Guntuku">
           </div>
           <div class="col-lg-8 content">
             <h2>Full Stack Developer &amp; Graduate Researcher</h2>
@@ -128,7 +163,7 @@
 
           <div class="col-lg-3 col-md-6">
             <div class="stats-item">
-              <i class="bi bi-emoji-smile"></i>
+              <i class="bi bi-emoiji-smile"></i>
               <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1" class="purecounter"></span>
               <p><strong>Projects</strong> <span>Completed</span></p>
             </div>
@@ -257,6 +292,11 @@
       </div><!-- End Section Title -->
 
       <div class="container">
+        <div class="resume-download-container" data-aos="fade-up" data-aos-delay="100">
+          <a href="assets/pdf/Vijay_Guntuku_Resume.pdf" download="Vijay_Guntuku_Resume.pdf" class="download-btn">
+            <i class="bi bi-download"></i> Download Resume (PDF)
+          </a>
+        </div>
 
         <div class="row">
 
@@ -559,9 +599,6 @@
     <div class="container">
       <div class="copyright text-center ">
         <p>© <span>Copyright</span> <strong class="px-1 sitename">Vijay Guntuku</strong> <span>All Rights Reserved</span></p>
-      </div>
-      <div class="credits">
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
       </div>
     </div>
 
