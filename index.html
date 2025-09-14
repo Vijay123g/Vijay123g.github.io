@@ -54,6 +54,129 @@
       margin-bottom: 30px;
     }
 
+     /* Enhanced Portfolio Styles */
+     .portfolio-item {
+      margin-bottom: 30px;
+    }
+
+    .portfolio-card {
+      height: 100%;
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+      border: 1px solid #eaeaea;
+    }
+
+    .portfolio-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+    }
+
+    .portfolio-icon-container {
+      height: 180px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #149ddd 0%, #0d8ac5 100%);
+      color: white;
+    }
+
+    .portfolio-icon-container i {
+      font-size: 4rem;
+    }
+
+    .portfolio-content {
+      padding: 25px;
+    }
+
+    .portfolio-title {
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin-bottom: 10px;
+      color: #2c3e50;
+    }
+
+    .portfolio-description {
+      color: #7f8c8d;
+      margin-bottom: 15px;
+      font-size: 0.95rem;
+    }
+
+    .portfolio-tech {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 20px;
+    }
+
+    .tech-tag {
+      background: #f8f9fa;
+      padding: 4px 10px;
+      border-radius: 15px;
+      font-size: 0.8rem;
+      color: #149ddd;
+      border: 1px solid #e9ecef;
+    }
+
+    .portfolio-links {
+      display: flex;
+      gap: 15px;
+    }
+
+    .portfolio-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      color: #149ddd;
+      text-decoration: none;
+      font-size: 0.9rem;
+      transition: all 0.3s ease;
+    }
+
+    .portfolio-link:hover {
+      color: #0d8ac5;
+    }
+
+    /* Filter buttons styling */
+    .portfolio-filters {
+      margin-bottom: 30px;
+    }
+
+    .portfolio-filters li {
+      cursor: pointer;
+      display: inline-block;
+      padding: 8px 20px;
+      margin: 0 5px 10px;
+      font-size: 0.9rem;
+      font-weight: 500;
+      line-height: 1;
+      color: #444;
+      border-radius: 50px;
+      border: 1px solid #e2e2e2;
+      transition: all 0.3s ease;
+    }
+
+    .portfolio-filters li:hover,
+    .portfolio-filters li.filter-active {
+      background: #149ddd;
+      color: white;
+      border-color: #149ddd;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      .portfolio-icon-container {
+        height: 150px;
+      }
+
+      .portfolio-content {
+        padding: 20px;
+      }
+    }
+
+
     @media (max-width: 768px) {
       .section-title-row {
         text-align: center;
@@ -94,9 +217,9 @@
     </a>
 
     <div class="social-links text-center">
-      <a href="https://www.linkedin.com/in/vijay-guntuku-5b7a941b3/" class="linkedin"><i class="bi bi-linkedin"></i></a>
+      <a href="https://www.linkedin.com/in/vijay-guntuku-2739431a4/" class="linkedin"><i class="bi bi-linkedin"></i></a>
       <a href="mailto:vgunt003@odu.edu" class="email"><i class="bi bi-envelope"></i></a>
-      <a href="#" class="github"><i class="bi bi-github"></i></a>
+      <a href="https://github.com/Vijay123g" class="github"><i class="bi bi-github"></i></a>
       <a href="assets/pdf/Vijay_Guntuku_Resume.pdf" download="Vijay_Guntuku_Resume.pdf" class="download-btn">
         <i class="bi bi-download"></i>
       </a>
@@ -107,7 +230,7 @@
         <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i>Home</a></li>
         <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
         <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
-        <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
+        <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Projects</a></li>
         <li><a href="#skills"><i class="bi bi-code-slash navicon"></i> Skills</a></li>
         <li><a href="#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
       </ul>
@@ -119,7 +242,7 @@
 
     <section id="hero" class="hero section dark-background">
 
-      <img src="assets/img/profile.JPG" alt="" data-aos="fade-in" class="">
+      <img src="assets/img/bg-profile.JPG" alt="" data-aos="fade-in" class="">
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
         <h2>Vijay Guntuku</h2>
@@ -156,7 +279,8 @@
                 <ul>
                   <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>vgunt003@odu.edu</span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>LinkedIn:</strong>
-                    <span>linkedin.com/in/vijay-guntuku</span></li>
+                    <span>linkedin.com/in/vijay-guntuku-2739431a4</span>
+                  </li>
                   <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Norfolk, Virginia, USA</span>
                   </li>
                   <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
@@ -343,127 +467,127 @@
       </div>
 
       <div class="container">
-      <div class="row">
+        <div class="row">
 
-        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-          <h3 class="resume-title">Summary</h3>
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="resume-title">Summary</h3>
 
-          <div class="resume-item pb-0">
-            <h4>Vijay Guntuku</h4>
-            <p><em>Innovative and motivated Computer Science graduate with 2+ years of experience in full-stack
-                development and a passion for creating efficient, scalable software solutions.</em></p>
-            <ul>
-              <li>Norfolk, Virginia, USA</li>
-              <li>vgunt003@odu.edu</li>
-              <li>linkedin.com/in/vijay-guntuku</li>
-            </ul>
-          </div><!-- End Resume Item -->
+            <div class="resume-item pb-0">
+              <h4>Vijay Guntuku</h4>
+              <p><em>Innovative and motivated Computer Science graduate with 2+ years of experience in full-stack
+                  development and a passion for creating efficient, scalable software solutions.</em></p>
+              <ul>
+                <li>Norfolk, Virginia, USA</li>
+                <li>vgunt003@odu.edu</li>
+                <li>linkedin.com/in/vijay-guntuku-2739431a4</li>
+              </ul>
+            </div><!-- End Resume Item -->
 
-          <h3 class="resume-title">Education</h3>
-          <div class="resume-item">
-            <h4>Master of Computer Science</h4>
-            <h5>2024 - Present</h5>
-            <p><em>Old Dominion University, Norfolk, Virginia</em></p>
-            <p>GPA: 3.54/4.0</p>
-          </div><!-- End Resume Item -->
+            <h3 class="resume-title">Education</h3>
+            <div class="resume-item">
+              <h4>Master of Computer Science</h4>
+              <h5>2024 - Present</h5>
+              <p><em>Old Dominion University, Norfolk, Virginia</em></p>
+              <p>GPA: 3.54/4.0</p>
+            </div><!-- End Resume Item -->
 
-          <div class="resume-item">
-            <h4>Bachelor of Technology in Computer Science</h4>
-            <h5>2018 - 2022</h5>
-            <p><em>CMR Technical Campus, JNTU, Hyderabad, India</em></p>
-            <p>GPA: 7.21/10.00</p>
-          </div><!-- End Resume Item -->
+            <div class="resume-item">
+              <h4>Bachelor of Technology in Computer Science</h4>
+              <h5>2018 - 2022</h5>
+              <p><em>CMR Technical Campus, JNTU, Hyderabad, India</em></p>
+              <p>GPA: 7.21/10.00</p>
+            </div><!-- End Resume Item -->
 
-          <h3 class="resume-title">Certifications</h3>
-          <div class="resume-item">
-            <h4>Java Programming: Complete Beginner to Advanced</h4>
-            <p><em>Udemy</em></p>
+            <h3 class="resume-title">Certifications</h3>
+            <div class="resume-item">
+              <h4>Java Programming: Complete Beginner to Advanced</h4>
+              <p><em>Udemy</em></p>
+            </div>
+            <div class="resume-item">
+              <h4>Programming for Everybody (Getting Started with Python)</h4>
+              <p><em>Coursera</em></p>
+            </div>
+            <div class="resume-item">
+              <h4>Complete Python Course: Go From Beginner To Expert</h4>
+              <p><em>Udemy</em></p>
+            </div>
+            <div class="resume-item">
+              <h4>HTML and CSS</h4>
+              <p><em>Udemy</em></p>
+            </div>
+
           </div>
-          <div class="resume-item">
-            <h4>Programming for Everybody (Getting Started with Python)</h4>
-            <p><em>Coursera</em></p>
-          </div>
-          <div class="resume-item">
-            <h4>Complete Python Course: Go From Beginner To Expert</h4>
-            <p><em>Udemy</em></p>
-          </div>
-          <div class="resume-item">
-            <h4>HTML and CSS</h4>
-            <p><em>Udemy</em></p>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <h3 class="resume-title">Professional Experience</h3>
+            <div class="resume-item">
+              <h4>Graduate Research Assistant</h4>
+              <h5>May 2025 - Present</h5>
+              <p><em>School of Cybersecurity, Old Dominion University, Norfolk, VA</em></p>
+              <ul>
+                <li>Develop and maintain secure competition platform of AIC²: AI Cybersecurity Competition Portal, a
+                  full-stack platform built with Next.js, React, Apollo Client and NestJS microservices</li>
+                <li>Troubleshoot and resolve containerization and dependency issues in Docker environment</li>
+                <li>Assist in front-end development with React.js and Material-UI to prototype research interfaces</li>
+                <li>Document research workflows, manage data integrity, and ensure compliance with university policies
+                </li>
+              </ul>
+            </div><!-- End Resume Item -->
+
+            <div class="resume-item">
+              <h4>Associate Software Engineer</h4>
+              <h5>Dec 2022 - July 2024</h5>
+              <p><em>Accenture Private Limited, Hyderabad, India</em></p>
+              <ul>
+                <li>Completed comprehensive training in MEAN stack development, specializing in MongoDB, Express.js,
+                  Angular, and Node.js</li>
+                <li>Developed Inspire BPO - an intelligent solution platform for Innovative Responses providing online
+                  solutioning tool for Accenture Operations Estimator</li>
+                <li>Designed and administered database infrastructure, optimizing data storage and retrieval for
+                  efficient
+                  application performance</li>
+                <li>Built RESTful APIs and contributed to Angular projects, focusing on implementing user stories and
+                  bug
+                  resolution</li>
+              </ul>
+            </div><!-- End Resume Item -->
+
+            <div class="resume-item">
+              <h4>Java Full Stack Developer Intern</h4>
+              <h5>Jul 2022 - Sep 2022</h5>
+              <p><em>Pramati Software Private Limited, Hyderabad, India</em></p>
+              <ul>
+                <li>Developed two projects: Portal for farmers to sell produce and Poultry management system</li>
+                <li>Utilized Java technologies, including Spring Boot, for back-end development</li>
+                <li>Collaborated with team members to design and implement software solutions</li>
+                <li>Conducted unit testing and resolved bugs to ensure project quality</li>
+              </ul>
+            </div><!-- End Resume Item -->
+
+            <div class="resume-item">
+              <h4>Python Developer and Tutor Intern</h4>
+              <h5>Nov 2021 - Apr 2022</h5>
+              <p><em>EZ Trainings and Technology, Hyderabad, India</em></p>
+              <ul>
+                <li>Developed Python-based projects and provided tutoring to students in Python programming</li>
+                <li>Assisted in debugging and optimizing Python scripts for various projects</li>
+              </ul>
+            </div><!-- End Resume Item -->
+
           </div>
 
         </div>
 
-        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-          <h3 class="resume-title">Professional Experience</h3>
-          <div class="resume-item">
-            <h4>Graduate Research Assistant</h4>
-            <h5>May 2025 - Present</h5>
-            <p><em>School of Cybersecurity, Old Dominion University, Norfolk, VA</em></p>
-            <ul>
-              <li>Develop and maintain secure competition platform of AIC²: AI Cybersecurity Competition Portal, a
-                full-stack platform built with Next.js, React, Apollo Client and NestJS microservices</li>
-              <li>Troubleshoot and resolve containerization and dependency issues in Docker environment</li>
-              <li>Assist in front-end development with React.js and Material-UI to prototype research interfaces</li>
-              <li>Document research workflows, manage data integrity, and ensure compliance with university policies
-              </li>
-            </ul>
-          </div><!-- End Resume Item -->
-
-          <div class="resume-item">
-            <h4>Associate Software Engineer</h4>
-            <h5>Dec 2022 - July 2024</h5>
-            <p><em>Accenture Private Limited, Hyderabad, India</em></p>
-            <ul>
-              <li>Completed comprehensive training in MEAN stack development, specializing in MongoDB, Express.js,
-                Angular, and Node.js</li>
-              <li>Developed Inspire BPO - an intelligent solution platform for Innovative Responses providing online
-                solutioning tool for Accenture Operations Estimator</li>
-              <li>Designed and administered database infrastructure, optimizing data storage and retrieval for efficient
-                application performance</li>
-              <li>Built RESTful APIs and contributed to Angular projects, focusing on implementing user stories and bug
-                resolution</li>
-            </ul>
-          </div><!-- End Resume Item -->
-
-          <div class="resume-item">
-            <h4>Java Full Stack Developer Intern</h4>
-            <h5>Jul 2022 - Sep 2022</h5>
-            <p><em>Pramati Software Private Limited, Hyderabad, India</em></p>
-            <ul>
-              <li>Developed two projects: Portal for farmers to sell produce and Poultry management system</li>
-              <li>Utilized Java technologies, including Spring Boot, for back-end development</li>
-              <li>Collaborated with team members to design and implement software solutions</li>
-              <li>Conducted unit testing and resolved bugs to ensure project quality</li>
-            </ul>
-          </div><!-- End Resume Item -->
-
-          <div class="resume-item">
-            <h4>Python Developer and Tutor Intern</h4>
-            <h5>Nov 2021 - Apr 2022</h5>
-            <p><em>EZ Trainings and Technology, Hyderabad, India</em></p>
-            <ul>
-              <li>Developed Python-based projects and provided tutoring to students in Python programming</li>
-              <li>Assisted in debugging and optimizing Python scripts for various projects</li>
-            </ul>
-          </div><!-- End Resume Item -->
-
-        </div>
-
       </div>
-
       </div>
-    </div>
 
     </section><!-- /Resume Section -->
-
-    <!-- Portfolio Section -->
     <section id="portfolio" class="portfolio section light-background">
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Portfolio</h2>
-        <p>Projects demonstrating my technical skills and experience</p>
+        <h2>Projects</h2>
+        <p>A showcase of my technical projects and accomplishments</p>
       </div><!-- End Section Title -->
 
       <div class="container">
@@ -480,90 +604,123 @@
           <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-research">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/app-1.jpg" class="img-fluid" alt="AI Cybersecurity Competition Portal">
-                <div class="portfolio-info">
-                  <h4>AI Cybersecurity Competition Portal</h4>
-                  <p>Next.js, React, NestJS, Docker</p>
-                  <a href="assets/img/portfolio/app-1.jpg" title="AI Cybersecurity Competition Portal"
-                    data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i
-                      class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                      class="bi bi-link-45deg"></i></a>
+              <div class="portfolio-card">
+                <div class="portfolio-icon-container">
+                  <i class="bi bi-shield-lock"></i>
+                </div>
+                <div class="portfolio-content">
+                  <h3 class="portfolio-title">AI Cybersecurity Competition Portal</h3>
+                  <p class="portfolio-description">
+                    A full-stack platform for AI cybersecurity competitions with secure authentication and real-time scoring.
+                  </p>
+                  <div class="portfolio-tech">
+                    <span class="tech-tag">Next.js</span>
+                    <span class="tech-tag">React</span>
+                    <span class="tech-tag">NestJS</span>
+                    <span class="tech-tag">Docker</span>
+                  </div>
+                  <div class="portfolio-links">
+                    <a href="https://aic2.org/" class="portfolio-link">
+                      <i class="bi bi-box-arrow-up-right"></i> Live Demo
+                    </a>
+                  </div>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/product-1.jpg" class="img-fluid" alt="Inspire BPO Platform">
-                <div class="portfolio-info">
-                  <h4>Inspire BPO Platform</h4>
-                  <p>MEAN Stack Application</p>
-                  <a href="assets/img/portfolio/product-1.jpg" title="Inspire BPO Platform"
-                    data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i
-                      class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                      class="bi bi-link-45deg"></i></a>
+              <div class="portfolio-card">
+                <div class="portfolio-icon-container">
+                  <i class="bi bi-graph-up"></i>
+                </div>
+                <div class="portfolio-content">
+                  <h3 class="portfolio-title">Inspire BPO Platform</h3>
+                  <p class="portfolio-description">
+                    An intelligent solution platform providing online estimation tools for business process operations.
+                  </p>
+                  <div class="portfolio-tech">
+                    <span class="tech-tag">MongoDB</span>
+                    <span class="tech-tag">Express.js</span>
+                    <span class="tech-tag">Angular</span>
+                    <span class="tech-tag">Node.js</span>
+                  </div>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-enterprise">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/branding-1.jpg" class="img-fluid" alt="Enterprise Resource Planning">
-                <div class="portfolio-info">
-                  <h4>ERP for Education</h4>
-                  <p>Java, Spring Boot, MySQL</p>
-                  <a href="assets/img/portfolio/branding-1.jpg" title="ERP for Education"
-                    data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i
-                      class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                      class="bi bi-link-45deg"></i></a>
+              <div class="portfolio-card">
+                <div class="portfolio-icon-container">
+                  <i class="bi bi-building"></i>
+                </div>
+                <div class="portfolio-content">
+                  <h3 class="portfolio-title">ERP for Education</h3>
+                  <p class="portfolio-description">
+                    Comprehensive enterprise resource planning system designed specifically for educational institutions.
+                  </p>
+                  <div class="portfolio-tech">
+                    <span class="tech-tag">Java</span>
+                    <span class="tech-tag">Spring Boot</span>
+                    <span class="tech-tag">MySQL</span>
+                    <span class="tech-tag">Thymeleaf</span>
+                  </div>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/books-1.jpg" class="img-fluid" alt="Poultry Management System">
-                <div class="portfolio-info">
-                  <h4>Poultry Management System</h4>
-                  <p>Java, Spring Boot, Thymeleaf</p>
-                  <a href="assets/img/portfolio/books-1.jpg" title="Poultry Management System"
-                    data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i
-                      class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                      class="bi bi-link-45deg"></i></a>
+              <div class="portfolio-card">
+                <div class="portfolio-icon-container">
+                  <i class="bi bi-clipboard-data"></i>
+                </div>
+                <div class="portfolio-content">
+                  <h3 class="portfolio-title">Poultry Management System</h3>
+                  <p class="portfolio-description">
+                    Web application for managing poultry farm operations including inventory, sales, and health tracking.
+                  </p>
+                  <div class="portfolio-tech">
+                    <span class="tech-tag">Java</span>
+                    <span class="tech-tag">Spring Boot</span>
+                    <span class="tech-tag">MySQL</span>
+                  </div>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-web">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/app-2.jpg" class="img-fluid" alt="Farmers Portal">
-                <div class="portfolio-info">
-                  <h4>Farmers Portal</h4>
-                  <p>Portal for farmers to sell produce</p>
-                  <a href="assets/img/portfolio/app-2.jpg" title="Farmers Portal" data-gallery="portfolio-gallery-app"
-                    class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                      class="bi bi-link-45deg"></i></a>
+              <div class="portfolio-card">
+                <div class="portfolio-icon-container">
+                  <i class="bi bi-shop"></i>
+                </div>
+                <div class="portfolio-content">
+                  <h3 class="portfolio-title">Farmers Portal</h3>
+                  <p class="portfolio-description">
+                    E-commerce platform enabling farmers to directly sell their produce to consumers and businesses.
+                  </p>
+                  <div class="portfolio-tech">
+                    <span class="tech-tag">Java</span>
+                    <span class="tech-tag">Spring Boot</span>
+                    <span class="tech-tag">MySQL</span>
+                  </div>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-research">
-              <div class="portfolio-content h-100">
-                <img src="assets/img/portfolio/product-2.jpg" class="img-fluid" alt="Research Publication">
-                <div class="portfolio-info">
-                  <h4>Research Publication</h4>
-                  <p>Enterprise Resource Planning for Educational Institution</p>
-                  <a href="assets/img/portfolio/product-2.jpg" title="Research Publication"
-                    data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i
-                      class="bi bi-zoom-in"></i></a>
-                  <a href="portfolio-details.html" title="More Details" class="details-link"><i
-                      class="bi bi-link-45deg"></i></a>
+              <div class="portfolio-card">
+                <div class="portfolio-icon-container">
+                  <i class="bi bi-journal-text"></i>
+                </div>
+                <div class="portfolio-content">
+                  <h3 class="portfolio-title">Research Publication</h3>
+                  <p class="portfolio-description">
+                    Published research paper on implementing Enterprise Resource Planning systems for educational institutions.
+                  </p>
+                  <div class="portfolio-tech">
+                    <span class="tech-tag">Research</span>
+                    <span class="tech-tag">ERP</span>
+                    <span class="tech-tag">Education</span>
+                  </div>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
@@ -612,7 +769,7 @@
                 <i class="bi bi-linkedin flex-shrink-0"></i>
                 <div>
                   <h3>LinkedIn</h3>
-                  <p>linkedin.com/in/vijay-guntuku</p>
+                  <p>https://www.linkedin.com/in/vijay-guntuku-2739431a4/</p>
                 </div>
               </div><!-- End Info Item -->
 
