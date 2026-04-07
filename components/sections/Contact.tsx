@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef, useState } from "react";
-import { HiMail, HiLocationMarker, HiPhone } from "react-icons/hi";
+import { HiMail, HiLocationMarker, HiPhone, HiDownload } from "react-icons/hi";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 export default function Contact() {
@@ -19,7 +19,7 @@ export default function Contact() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     // Handle form submission (integrate with your email service)
-    const mailtoLink = `mailto:vgunt003@odu.edu?subject=${encodeURIComponent(
+    const mailtoLink = `mailto:vijayguntuku10@gmail.com?subject=${encodeURIComponent(
       formData.subject
     )}&body=${encodeURIComponent(
       `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`
@@ -61,8 +61,8 @@ export default function Contact() {
     {
       icon: HiMail,
       title: "Email",
-      value: "vgunt003@odu.edu",
-      link: "mailto:vgunt003@odu.edu",
+      value: "vijayguntuku10@gmail.com",
+      link: "mailto:vijayguntuku10@gmail.com",
     },
     {
       icon: HiLocationMarker,
@@ -158,6 +158,22 @@ export default function Contact() {
                     </motion.div>
                   );
                 })}
+              </div>
+
+              {/* Resume Download */}
+              <div className="pt-6">
+                <h4 className="font-semibold text-gray-900 dark:text-white mb-4">
+                  Resume
+                </h4>
+                <a
+                  href="/assets/pdf/Vijay_Guntuku_Resume.pdf"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center space-x-2 px-6 py-3 bg-primary-600 hover:bg-primary-700 text-white rounded-lg font-medium transition-all duration-300 hover:scale-105 shadow-lg"
+                >
+                  <HiDownload className="w-5 h-5" />
+                  <span>Download Resume</span>
+                </a>
               </div>
 
               {/* Social Links */}

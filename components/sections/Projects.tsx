@@ -3,62 +3,39 @@
 import { motion } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef } from "react";
-import { HiExternalLink, HiCode } from "react-icons/hi";
-import { FaGithub } from "react-icons/fa";
+import { HiExternalLink } from "react-icons/hi";
 
 const projects = [
   {
     title: "CyberCup.ai – AI Cybersecurity Competition Platform",
     description:
-      "Built a full-stack platform using Next.js, React, and NestJS with integrated containerized JupyterLab environments. Implemented JWT authentication, CI/CD pipelines, and microservices architecture using Docker and Kubernetes.",
+      "Developed a scalable full-stack AI cybersecurity competition platform using React, Next.js, Apollo Client, and NestJS microservices. Designed and deployed Docker-based containerized environments, integrated REST APIs for real-time data flow, and built responsive UI components with Material-UI, improving system reliability by ~40%.",
     tech: [
-      "Next.js",
       "React",
+      "Next.js",
       "NestJS",
       "Docker",
-      "Kubernetes",
-      "JWT",
-      "JupyterLab",
+      "Apollo Client",
+      "Material-UI",
+      "REST API",
     ],
     liveUrl: "https://cybercup.ai/",
     featured: true,
-    category: "AI & Security",
+    category: "Production Platform",
   },
   {
-    title: "AI Interview Assistant",
+    title: "Inspire BPO – Enterprise Platform",
     description:
-      "Developed an intelligent interview preparation tool using React and Node.js integrated with OpenAI API. Features include dynamic question generation, real-time answer evaluation, and comprehensive chat history storage for tracking progress.",
-    tech: ["React", "Node.js", "Express", "OpenAI API", "MongoDB"],
-    githubUrl: "#",
-    category: "AI Application",
-  },
-  {
-    title: "Inspire BPO Platform",
-    description:
-      "Built an intelligent solution platform for Accenture Operations using the MEAN stack. Designed comprehensive dashboard, developed RESTful APIs, and optimized database performance for efficient business process operations.",
+      "Built and maintained a production MEAN stack application for Accenture's Inspire BPO platform. Designed optimized MongoDB schemas improving data retrieval efficiency by ~25%, developed RESTful APIs for scalable backend services, and implemented Angular UI components serving enterprise operations.",
     tech: ["MongoDB", "Express.js", "Angular", "Node.js", "REST API"],
-    category: "Enterprise",
+    category: "Enterprise Production",
   },
   {
-    title: "ERP for Education",
+    title: "Enterprise Resource Planning for Education",
     description:
-      "Comprehensive enterprise resource planning system designed specifically for educational institutions. Manages student records, attendance, grades, and administrative workflows with role-based access control.",
-    tech: ["Java", "Spring Boot", "MySQL", "Thymeleaf", "Hibernate"],
-    category: "Enterprise",
-  },
-  {
-    title: "Poultry Management System",
-    description:
-      "Full-featured web application for managing poultry farm operations including inventory tracking, sales management, health monitoring, and comprehensive reporting for farm optimization.",
-    tech: ["Java", "Spring Boot", "MySQL", "Bootstrap"],
-    category: "Web Application",
-  },
-  {
-    title: "Farmers Portal",
-    description:
-      "E-commerce platform enabling farmers to directly sell their produce to consumers and businesses. Features include product listings, order management, payment integration, and real-time inventory tracking.",
-    tech: ["Java", "Spring Boot", "MySQL", "REST API"],
-    category: "E-Commerce",
+      "Designed and developed a comprehensive ERP system for educational institutions with role-based dashboards, student management, attendance tracking, and reporting modules. Published research work in Mukt Shabd Journal showcasing the system architecture and implementation.",
+    tech: ["Java", "Spring Boot", "MySQL", "Hibernate", "Thymeleaf"],
+    category: "Full-Stack Application",
   },
 ];
 
@@ -102,12 +79,12 @@ export default function Projects() {
               Featured <span className="text-gradient">Projects</span>
             </h2>
             <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-              A showcase of my technical projects and accomplishments
+              Production-grade applications demonstrating full-stack expertise
             </p>
           </motion.div>
 
           {/* Projects Grid */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 gap-8 max-w-5xl mx-auto">
             {projects.map((project, index) => (
               <motion.div
                 key={project.title}
@@ -115,7 +92,7 @@ export default function Projects() {
                 whileHover={{ y: -8 }}
                 className={`group relative card-gradient rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-200 dark:border-gray-700 ${
                   project.featured
-                    ? "lg:col-span-2 border-primary-500 dark:border-primary-500"
+                    ? "border-primary-500 dark:border-primary-500"
                     : ""
                 }`}
               >
@@ -157,8 +134,8 @@ export default function Projects() {
                 </div>
 
                 {/* Links */}
-                <div className="flex space-x-4">
-                  {project.liveUrl && (
+                {project.liveUrl && (
+                  <div className="flex space-x-4">
                     <a
                       href={project.liveUrl}
                       target="_blank"
@@ -166,21 +143,10 @@ export default function Projects() {
                       className="flex items-center space-x-2 px-4 py-2 bg-primary-600 hover:bg-primary-700 text-white rounded-lg font-medium transition-all duration-300 hover:scale-105"
                     >
                       <HiExternalLink className="w-4 h-4" />
-                      <span>Live Demo</span>
+                      <span>View Live</span>
                     </a>
-                  )}
-                  {project.githubUrl && (
-                    <a
-                      href={project.githubUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center space-x-2 px-4 py-2 bg-gray-100 dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 text-gray-900 dark:text-white rounded-lg font-medium transition-all duration-300 hover:scale-105 border border-gray-200 dark:border-gray-700"
-                    >
-                      <FaGithub className="w-4 h-4" />
-                      <span>GitHub</span>
-                    </a>
-                  )}
-                </div>
+                  </div>
+                )}
               </motion.div>
             ))}
           </div>

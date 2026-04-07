@@ -7,39 +7,41 @@ import { HiBriefcase, HiAcademicCap } from "react-icons/hi";
 
 const experiences = [
   {
-    title: "Graduate Research Assistant",
-    company: "Old Dominion University",
+    title: "Graduate Research Assistant (Full-Stack Developer)",
+    company: "School of Cybersecurity, Old Dominion University",
     location: "Norfolk, VA",
     period: "May 2025 - Present",
     type: "Research",
     points: [
-      "Develop and maintain secure competition platform AIC²: AI Cybersecurity Competition Portal using Next.js, React, Apollo Client, and NestJS microservices",
-      "Troubleshoot and resolve containerization and dependency issues in Docker environment",
-      "Assist in front-end development with React.js and Material-UI to prototype research interfaces",
+      "Developed CyberCup.ai (AIC²), a scalable full-stack AI cybersecurity competition platform using React, Next.js, Apollo Client, and NestJS microservices",
+      "Designed and deployed Docker-based containerized environments, improving system reliability and reducing setup time by ~40%",
+      "Built responsive UI components using React and Material-UI, improving user interaction and usability",
+      "Integrated REST APIs and managed real-time data flow across microservices, enhancing system responsiveness and scalability",
     ],
   },
   {
     title: "Associate Software Engineer",
-    company: "Accenture",
+    company: "Accenture Private Limited",
     location: "Hyderabad, India",
     period: "Dec 2022 - July 2024",
     type: "Full-time",
     points: [
-      "Completed comprehensive training in MEAN stack development, specializing in MongoDB, Express.js, Angular, and Node.js",
-      "Developed Inspire BPO - an intelligent solution platform for Accenture Operations Estimator",
-      "Designed and administered database infrastructure, optimizing data storage and retrieval for efficient application performance",
+      "Developed and maintained a MEAN stack application (MongoDB, Express.js, Angular, Node.js) for the Inspire BPO platform",
+      "Designed and optimized MongoDB schemas and queries, improving data retrieval efficiency by ~25%",
+      "Built RESTful APIs to support scalable backend services and seamless data exchange",
+      "Implemented Angular UI components and resolved production issues, improving application stability and user experience",
     ],
   },
   {
     title: "Java Full Stack Developer Intern",
-    company: "Pramati",
+    company: "Pramati Software Private Limited",
     location: "Hyderabad, India",
     period: "Jul 2022 - Sep 2022",
     type: "Internship",
     points: [
-      "Developed two projects: Portal for farmers to sell produce and Poultry management system",
-      "Utilized Java technologies, including Spring Boot, for back-end development",
-      "Conducted unit testing and resolved bugs to ensure project quality",
+      "Developed full-stack applications using Java, Spring Boot, and MySQL",
+      "Built REST APIs and backend services for business applications",
+      "Performed unit testing and debugging to ensure high-quality software delivery",
     ],
   },
 ];
@@ -180,11 +182,11 @@ export default function Experience() {
               >
                 <div className="mb-3">
                   <span className="inline-block px-3 py-1 bg-primary-100 dark:bg-primary-900/30 text-primary-600 dark:text-primary-400 text-sm font-medium rounded-full">
-                    2024 - Present
+                    Aug 2024 - May 2026
                   </span>
                 </div>
                 <h4 className="text-xl font-bold text-gray-900 dark:text-white mb-2">
-                  Master of Computer Science
+                  Master's in Computer Science & Engineering
                 </h4>
                 <p className="text-primary-600 dark:text-primary-400 font-semibold mb-1">
                   Old Dominion University
@@ -193,7 +195,7 @@ export default function Experience() {
                   Norfolk, Virginia
                 </p>
                 <p className="text-sm font-medium text-gray-700 dark:text-gray-300">
-                  GPA: 3.54/4.0
+                  GPA: 3.71/4.0
                 </p>
               </motion.div>
 
@@ -203,11 +205,11 @@ export default function Experience() {
               >
                 <div className="mb-3">
                   <span className="inline-block px-3 py-1 bg-primary-100 dark:bg-primary-900/30 text-primary-600 dark:text-primary-400 text-sm font-medium rounded-full">
-                    2018 - 2022
+                    Jul 2018 - May 2022
                   </span>
                 </div>
                 <h4 className="text-xl font-bold text-gray-900 dark:text-white mb-2">
-                  B.Tech in Computer Science
+                  Bachelor of Technology in Computer Science
                 </h4>
                 <p className="text-primary-600 dark:text-primary-400 font-semibold mb-1">
                   CMR Technical Campus, JNTU

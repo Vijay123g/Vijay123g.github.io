@@ -86,7 +86,7 @@ export default function Hero() {
             variants={itemVariants}
             className="text-2xl md:text-3xl font-semibold mb-6 text-gray-700 dark:text-gray-300"
           >
-            Software Engineer | Full Stack | LLM Applications
+            Full-Stack Developer specializing in scalable web applications and microservices
           </motion.h2>
 
           {/* Description */}
@@ -94,9 +94,8 @@ export default function Hero() {
             variants={itemVariants}
             className="text-lg md:text-xl text-gray-600 dark:text-gray-400 mb-10 max-w-3xl mx-auto leading-relaxed"
           >
-            I build scalable web applications and AI-powered tools using React,
-            Next.js, Node.js, and Docker. Currently working on AI cybersecurity
-            platforms at Old Dominion University.
+            2+ years of experience building production-grade applications with React, Node.js, and Docker.
+            Currently developing AI cybersecurity platforms at Old Dominion University.
           </motion.p>
 
           {/* CTA Buttons */}
@@ -157,7 +156,7 @@ export default function Hero() {
               </div>
             </a>
             <a
-              href="mailto:vgunt003@odu.edu"
+              href="mailto:vijayguntuku10@gmail.com"
               className="group"
               aria-label="Email"
             >

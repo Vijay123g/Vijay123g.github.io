@@ -24,31 +24,32 @@ import { FaDatabase } from "react-icons/fa";
 
 const skillCategories = [
   {
-    title: "Languages",
-    skills: [
-      { name: "Java", icon: HiCode, color: "#007396" },
-      { name: "Python", icon: SiPython, color: "#3776AB" },
-      { name: "JavaScript", icon: SiJavascript, color: "#F7DF1E" },
-      { name: "C", icon: HiCode, color: "#A8B9CC" },
-    ],
-  },
-  {
-    title: "Frameworks",
+    title: "Frontend",
     skills: [
       { name: "React", icon: SiReact, color: "#61DAFB" },
       { name: "Next.js", icon: SiNextdotjs, color: "#000000" },
-      { name: "Node.js", icon: SiNodedotjs, color: "#339933" },
-      { name: "Express", icon: SiExpress, color: "#000000" },
-      { name: "Spring Boot", icon: SiSpring, color: "#6DB33F" },
       { name: "Angular", icon: SiAngular, color: "#DD0031" },
+      { name: "JavaScript", icon: SiJavascript, color: "#F7DF1E" },
+      { name: "Material-UI", icon: HiCode, color: "#007FFF" },
     ],
   },
   {
-    title: "Tools & Cloud",
+    title: "Backend",
+    skills: [
+      { name: "Node.js", icon: SiNodedotjs, color: "#339933" },
+      { name: "Express", icon: SiExpress, color: "#000000" },
+      { name: "NestJS", icon: HiServer, color: "#E0234E" },
+      { name: "Spring Boot", icon: SiSpring, color: "#6DB33F" },
+      { name: "Python", icon: SiPython, color: "#3776AB" },
+      { name: "Java", icon: HiCode, color: "#007396" },
+    ],
+  },
+  {
+    title: "DevOps & Tools",
     skills: [
       { name: "Docker", icon: SiDocker, color: "#2496ED" },
-      { name: "Git", icon: SiGit, color: "#F05032" },
       { name: "Kubernetes", icon: SiKubernetes, color: "#326CE5" },
+      { name: "Git", icon: SiGit, color: "#F05032" },
       { name: "GCP", icon: SiGooglecloud, color: "#4285F4" },
       { name: "Azure", icon: HiCloud, color: "#0089D6" },
     ],
